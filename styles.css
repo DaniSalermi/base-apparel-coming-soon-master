@@ -1,0 +1,69 @@
+:root {
+  --primary-color: hsl(0, 36%, 70%);
+  --alert-color: hsl(0, 93%, 68%);
+  --neutral-color: hsl(0, 6%, 24%);
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+h1,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+img {
+  width: 100%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.hero-page {
+  display: flex;
+  height: 100vh;
+}
+.page-info {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 166px;
+  background: url("images/bg-pattern-desktop.svg"),
+    linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%) 100%);
+}
+aside {
+  flex: 0.735;
+  background: url("images/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.page-info-title {
+  font-size: 64px;
+  color: var(--primary-color);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.9rem;
+  line-height: 0.98;
+  margin-bottom: 44px;
+}
+.page-info-text {
+  max-width: 428px;
+  color: var(--primary-color);
+  line-height: 1.49;
+}
+
+.page-info-title span {
+  color: var(--neutral-color);
+  font-weight: 600;
+}
+.logo-style {
+  max-width: 155px;
+  margin-bottom: 140px;
+}
