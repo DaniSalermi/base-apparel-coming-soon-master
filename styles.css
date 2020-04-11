@@ -22,7 +22,7 @@ img {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--primary-color);
 }
 .hero-page {
   display: flex;
@@ -104,7 +104,6 @@ aside {
   border-radius: 5em;
   transition: all 200ms ease-in;
   cursor: pointer;
-  t
 }
 
 .arrow:hover {
@@ -145,4 +144,73 @@ aside {
 .error-icon.show,
 .error-message.show {
   opacity: 1;
+}
+.mobile-logo {
+  display: none;
+}
+.footer-container {
+  background-color: hsl(0, 100%, 98%);
+}
+@media (max-width: 768px) {
+  .hero-page {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .hide-logo {
+    display: none;
+  }
+  .page-info {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 0px;
+    background: url("images/bg-pattern-desktop.svg"),
+      linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%) 100%);
+    padding-top: 65px;
+  }
+  ::placeholder {
+    font-size: 13px;
+  }
+
+  .mobile-logo {
+    display: flex;
+    align-items: center;
+    max-width: 100px;
+    padding: 32px;
+  }
+  .page-info-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 9px;
+    line-height: 43px;
+  }
+  .page-info-text {
+    font-size: 13px;
+    max-width: 295px;
+    line-height: 22px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  aside {
+    flex: 0.54;
+    min-height: 37.5vh;
+    background: url("images/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .page-info-input {
+    max-width: 264px;
+    min-height: 48px;
+    padding: 0 1.5em;
+  }
+  .arrow {
+    min-height: 52px;
+    min-width: 65px;
+  }
+  .error-icon {
+    right: 75px;
+  }
 }
