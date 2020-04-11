@@ -32,14 +32,15 @@ img {
   display: flex;
   flex: 1;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 66px;
   flex-direction: column;
   padding-left: 166px;
   background: url("images/bg-pattern-desktop.svg"),
     linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%) 100%);
 }
 aside {
-  flex: 0.735;
+  flex: 0.92;
   background: url("images/hero-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -52,7 +53,7 @@ aside {
   text-transform: uppercase;
   letter-spacing: 0.9rem;
   line-height: 0.98;
-  margin-bottom: 44px;
+  margin-bottom: 34px;
 }
 .page-info-text {
   font-size: 16px;
@@ -212,5 +213,8 @@ aside {
   }
   .error-icon {
     right: 75px;
+  }
+  .error-message {
+    margin-bottom: 20px;
   }
 }
