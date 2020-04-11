@@ -9,7 +9,8 @@ body {
   padding: 0px;
 }
 h1,
-p {
+p,
+h3 {
   margin: 0px;
   padding: 0px;
 }
@@ -54,9 +55,11 @@ aside {
   margin-bottom: 44px;
 }
 .page-info-text {
+  font-size: 16px;
   max-width: 428px;
   color: var(--primary-color);
   line-height: 1.49;
+  margin-bottom: 50px;
 }
 
 .page-info-title span {
@@ -66,4 +69,79 @@ aside {
 .logo-style {
   max-width: 155px;
   margin-bottom: 140px;
+}
+.page-info-input {
+  background-color: transparent;
+  border: inherit;
+  border: 1px solid var(--primary-color);
+  border-radius: 5rem;
+  min-width: 445px;
+  min-height: 56px;
+  outline: inherit;
+  padding: 0 2em;
+  color: var(--neutral-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.page-info-input.error {
+  border: 2px solid var(--alert-color);
+}
+.arrow {
+  background: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%) 0%,
+    hsl(0, 74%, 74%) 100%
+  );
+  min-height: 60px;
+  position: absolute;
+  right: 0;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5em;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+  t
+}
+
+.arrow:hover {
+  background: linear-gradient(
+    135deg,
+    hsl(0, 100%, 98%) 0%,
+    hsl(0, 80%, 86%) 50%
+  );
+  box-shadow: 6px 7px 19px 0px hsl(0, 36%, 70%);
+}
+.page-info-input-style {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+::placeholder {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 50%;
+}
+.error-message {
+  margin-top: 10px;
+  padding: 0 2em;
+  opacity: 0;
+}
+.error-message h3 {
+  font-size: 14px;
+  color: var(--alert-color);
+}
+.error-icon {
+  position: absolute;
+  right: 115px;
+  opacity: 0;
+}
+
+.error-icon.show,
+.error-message.show {
+  opacity: 1;
 }
